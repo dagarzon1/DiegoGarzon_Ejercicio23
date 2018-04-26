@@ -58,17 +58,17 @@ int main()
     }
   }
   x=0.0;
-  cout<<find_t(u_save,1.0,Nt,maximo)<<endl;
-  /*
-  for(int j=0;j<Nt;j++)
-  {}
-    for(int i=0;i<Nx;i++)
+  for(int i=0;i<Nx;i++)
+  {
+    x+=dx;
+    cout<<x<<" ";
+    for(int j=0;j<Nt;j++)
     {
       x+=dx;
       cout<<u_save[j][i]<<" ";
     }
     cout<<endl;
-  }*/
+  }
   return 0;
 }
 int find_t(double ** y, double t, int Nt, int m)
